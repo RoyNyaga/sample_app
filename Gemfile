@@ -62,7 +62,7 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Bootstrap gem file
-gem 'bootstrap-sass', '3.3.7'
+gem "bootstrap-sass", ">= 3.4.1"
 
 # for integration test purposes
 gem 'rails-controller-testing'
