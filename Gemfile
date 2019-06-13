@@ -66,3 +66,5 @@ gem "bootstrap-sass", ">= 3.4.1"
 
 # for integration test purposes
 gem 'rails-controller-testing'
+# bcrypt gem
+gem 'bcrypt',  '>= 3.1.12'
