@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   get  '/contact', to: 'static_pages#contact'
   get  '/signup',  to: 'users#new'
   post '/signup',  to: 'users#create'# overides the default '/users' url to match '/signup', 
-  					# if not the pages that show errors will have the default url of '/users' taking from 
+  					# if not the page that show errors(new) will have the default url of '/users' taking from 
   					#the resource. Notice that the "form_for" method in the new.html.erb takes a url as an
   					# extra argument so as to effect the changes done here, if not it will access the create
   					# controller using the default route in this case which is "/users". This is explained 
