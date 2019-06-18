@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'sessions/new'
   root 'static_pages#home' 
   get  '/help',    to: 'static_pages#help'
   get  '/about',   to: 'static_pages#about'
@@ -10,6 +11,9 @@ Rails.application.routes.draw do
   					# extra argument so as to effect the changes done here, if not it will access the create
   					# controller using the default route in this case which is "/users". This is explained 
   					# clarely on the exercise part of chapter 7 section 7.3.4
+  get    '/login',   to: 'sessions#new'
+  post   '/login',   to: 'sessions#create'
+  delete '/logout',  to: 'sessions#destroy'
   resources :users
 
 end
